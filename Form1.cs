@@ -25,7 +25,7 @@ namespace Task_4_IDE_coursework
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            WorkerAddForm newform = new WorkerAddForm();
+            QueriesForm newform = new QueriesForm();
             newform.ShowDialog(this);
         }
     }

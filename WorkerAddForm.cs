@@ -73,9 +73,11 @@ namespace Task_4_IDE_coursework
             CreateCommand(query, connectionString);
 
             MessageBox.Show("Worker added!");
-            this.Close();
+            //this.Close();
 
             Application.OpenForms["WorkerForm"].Hide();
+            Application.OpenForms["WorkerAddForm"].Hide();
+            Application.OpenForms["WorkerAddForm"].Close();
             WorkerForm newform = new WorkerForm();
             newform.ShowDialog(this);
 

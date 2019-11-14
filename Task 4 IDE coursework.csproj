@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueriesForm.Designer.cs">
+      <DependentUpon>QueriesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="taskDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -89,6 +95,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QueriesForm.resx">
+      <DependentUpon>QueriesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkerAddForm.resx">
       <DependentUpon>WorkerAddForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +108,8 @@
       <DependentUpon>WorkerForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\taskDataSet.datasource" />
+    <None Include="Properties\DataSources\taskDataSet.salariesRow.datasource" />
+    <None Include="Properties\DataSources\taskDataSet.workersRow.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
